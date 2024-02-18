@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Infrastructure.EFCore.Mapping;
 
 namespace ShopManagement.Infrastructure.EFCore
 {
