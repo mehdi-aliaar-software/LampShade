@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using _0_Framework.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace _0_Framework.Infrastructure
 {
