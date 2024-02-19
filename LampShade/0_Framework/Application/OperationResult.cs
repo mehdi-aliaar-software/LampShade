@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.JavaScript;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _0.Framework.Application
+﻿namespace _0_Framework.Application
 {
     public class OperationResult
     {
@@ -14,9 +7,9 @@ namespace _0.Framework.Application
 
         public OperationResult()
         {
-            IsSucceeded=false;
+            IsSucceeded = false;
         }
-        public OperationResult Succeeded(string message="the operation succeeded....!")
+        public OperationResult Succeeded(string message = "the operation succeeded....!")
         {
             IsSucceeded = true;
             Message = message;
