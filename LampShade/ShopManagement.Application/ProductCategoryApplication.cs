@@ -1,4 +1,4 @@
-﻿using _0.Framework.Application;
+﻿using _0_Framework.Application;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 
@@ -18,7 +18,7 @@ namespace ShopManagement.Application
 
             if (_productCategoryRepository.Exists(x=>x.Name==command.Name))
             {
-                result.Failed("there already exists the name you entered...");
+                result.Failed(ApplicationMessages.DuplicatedRrcord);
             }
 
             string slug = command.Slug.Slugify();
@@ -46,12 +46,12 @@ namespace ShopManagement.Application
             var entity = _productCategoryRepository.Get(command.Id);
             if (entity == null)
             {
-                return result.Failed("Record Not found !");
+                return result.Failed(ApplicationMessages.RecordNotFound);
             }
 
             if (_productCategoryRepository.Exists(x=>x.Name==command.Name && x.Id!=command.Id))
             {
-                return result.Failed("Record with this name already exists !");
+                return result.Failed(ApplicationMessages.DuplicatedRrcord);
             }
 
             var slug=command.Slug.Slugify();    
