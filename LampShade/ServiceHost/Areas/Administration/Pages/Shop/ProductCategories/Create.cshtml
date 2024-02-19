@@ -67,10 +67,14 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="form-group no-margin">
-                    @* <label asp-for="Description" class="control-label">توضیحات</label> *@
-                    <label asp-for="Description" class="control-label">Description</label>
-                    <textarea class="form-control autogrow" asp-for="Description" onchange="fillField('Description', 'MetaDescription')"
+                @* <div class="form-group no-margin"> *@
+                    <div class="form-group ">
+                  @*       <label asp-for="Description" class="control-label">توضیحات</label>
+                        <textarea class="form-control autogrow" asp-for="Description" onchange="fillField('Description', 'MetaDescription')"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea> *@
+
+                        <label asp-for="Description" class="control-label">Description</label>
+                    <textarea class="form-control " asp-for="Description" onchange="fillField('Description', 'MetaDescription')"
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="Description" class="error"></span>
                 </div>
@@ -88,10 +92,14 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="form-group no-margin">
-                    @* <label asp-for="MetaDescription" class="control-label">توضیحات متا</label> *@
-                    <label asp-for="MetaDescription" class="control-label">Meta Description</label>
+                @* <div class="form-group no-margin"> *@
+                <div class="form-group">
+                    @*                 <label asp-for="MetaDescription" class="control-label">توضیحات متا</label>
                     <textarea class="form-control autogrow" asp-for="MetaDescription"
+                    style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea> *@
+
+                    <label asp-for="MetaDescription" class="control-label">Meta Description</label>
+                    <textarea class="form-control " asp-for="MetaDescription"
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="MetaDescription" class="error"></span>
                 </div>
