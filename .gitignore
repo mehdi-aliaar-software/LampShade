@@ -396,3 +396,15 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/LampShade/0_Framework/obj/Debug/net8.0/0_Framework.AssemblyInfoInputs.cache
+/LampShade/ShopManagement.Application/obj/Debug/net8.0/ShopManagement.Application.AssemblyInfo.cs
+/LampShade/ShopManagement.Application/obj/Debug/net8.0/ShopManagement.Application.AssemblyInfoInputs.cache
+/LampShade/ShopManagement.Application.Contracts/obj/Debug/net8.0/ShopManagement.Application.Contracts.AssemblyInfo.cs
+/LampShade/ShopManagement.Application.Contracts/obj/Debug/net8.0/ShopManagement.Application.Contracts.AssemblyInfoInputs.cache
+/LampShade/ShopManagement.Domain/obj/Debug/net8.0/ShopManagement.Domain.AssemblyInfo.cs
+/LampShade/ShopManagement.Domain/obj/Debug/net8.0/ShopManagement.Domain.AssemblyInfoInputs.cache
+/LampShade/0_Framework/obj/Debug/net8.0/0_Framework.AssemblyInfo.cs
+/LampShade/.vs/ProjectEvaluation/lampshade.projects.v7.bin
+/LampShade/.vs/ProjectEvaluation/lampshade.metadata.v7.bin
+/LampShade/.vs/LampShade/v17/.suo
+/LampShade/.vs/LampShade/v17/.futdcache.v2
