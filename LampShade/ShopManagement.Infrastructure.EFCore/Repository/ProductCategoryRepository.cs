@@ -1,6 +1,7 @@
 ﻿using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
+using System.Linq;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -11,6 +12,21 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         public ProductCategoryRepository(ShopContext context):base(context)
         {
             _context = context;
+        }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+
+            var productCats = _context
+                .ProductCategories
+                .Select(x => new ProductCategoryViewModel
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    CreationDate = x.CreationDate.ToString()
+                } ).ToList();
+
+            return productCats;
         }
 
         public EditProductCategory GetDetails(int id)
